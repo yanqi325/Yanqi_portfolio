@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Background container -->
+    <div id="header"> 
+        <!-- Navigation Bar Container -->
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo"> 
+                <div class="group-right">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class='bx bx-x' onclick="closemenu()"></i>
+                    </ul>
+                    <i class='bx bx-menu' onclick="openmenu()"></i>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/lim-yan-qi-673b9a205"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/yanqi325"><i class='bx bxl-github'></i></a>
+                        <a href="mailto:yanqi0325@gmail.com"><i class='bx bx-envelope'></i></a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/lim-yan-qi-673b9a205">
+                        <button class="square-button">Let's Connect</button>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Home -->
+            <section id="home">
+                <div class="header-text">
+                    <p>Welcome to my Portfolio</p>
+                    <h1 id="main-heading">Hi! I'm Yan Qi, <span>Web Designer</span></h1>
+                    <small>Greetings! I'm a final year Computer Science student from Taylor's University, 
+                        <br> currently seeking for a front-end developer role to leverage my skills and pursue my passion!
+                        <br> Feel free to check out my portfolio!
+                    </small>
+                </div>
+    
+                <a href="https://www.linkedin.com/in/lim-yan-qi-673b9a205">
+                    <button class="connect-button">Let's Connect 
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="title">
+            <small class="section-subtitle">My Journey</small>
+            <h3 class="section-title">About Me</h3>
+        </div>
+        <div class="about-container">
+            <div class="timeline-col-1">
+                <h3 class="col-title"><i class='bx bxs-graduation' ></i> Education</h3>
+                <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Bachelor of Computer Science (Honours)</h3>
+                    <p class="timeline-text">Taylor's University</p>
+                    <span class="timeline-date"><i class='bx bx-calendar-alt' ></i> 2021 - 2024</span>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Foundation in Arts</h3>
+                    <p class="timeline-text">Sunway College</p>
+                    <span class="timeline-date"><i class='bx bx-calendar-alt' ></i> 2020 - 2021</span>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Cambridge IGCSE</h3>
+                    <p class="timeline-text">Poi Lam High School (SUWA)</p>
+                    <span class="timeline-date"><i class='bx bx-calendar-alt' ></i> 2015 - 2019</span>
+                </div>
+            </div>   
+    
+            <div class="achievement-col-2">
+                <h3 class="col-title"><i class='bx bxs-trophy' ></i> Achievements</h3>
+                <div class="achievement-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="achievement-title">Lily Doll Project</h3>
+                    <p class="achievement-text">Taylor's University</p>
+                    <span class="achievement-date"><i class='bx bx-calendar-alt' ></i> July 2023 - Present</span>
+                </div>
+    
+                <div class="achievement-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="achievement-title">Top 5 Winner of Odyssey Hackfest</h3>
+                    <p class="achievement-text">University of Malaya</p>
+                    <span class="achievement-date"><i class='bx bx-calendar-alt' ></i> October 2022</span>
+                </div>
+    
+                <div class="achievement-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="achievement-title">MYSEKOLAH Filming Top 5 Leading Team</h3>
+                    <p class="achievement-text">IACT College</p>
+                    <span class="achievement-date"><i class='bx bx-calendar-alt' ></i> August 2018 - December 2018</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="title">
+            <small class="section-subtitle">My Portfolio</small>
+            <h3 class="section-title">Projects</h3>
+        </div>
+
+        <div class="work-filters">
+            <span class="work-item active-work" data-filter="all"> All</span>
+            <span class="work-item" data-filter=".web"> Web</span>
+            <span class="work-item" data-filter=".app"> App</span>
+            <span class="work-item" data-filter=".design"> Design</span>
+        </div>
+
+        <div class="work-container container grid">
+            <!-- mobile app -->
+            <div class="work mix app">
+                <img src="images/lily.jpg" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Autism Learning App</h3>
+                    <h1 class="work-title">Lily Doll Project</h1>
+                    <small class="details-info">Flutter</small>
+                    <p class="details-description">
+                        An app designed specifically for children with autism according to the client's requirement, serving as both an educational tool and a mental health tracker. 
+                        The app is paired with a toy doll through Bluetooth, acting as a supportive "companion" to help monitor the child's anxiety levels via data analysis.
+                    </p>
+                    <a href="https://github.com/yanqi325/Lily-Doll"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix app">
+                <img src="images/healme.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mental Health App</h3>
+                    <h1 class="work-title">Heal Me</h1>
+                    <small class="details-info">Flutter</small>
+                    <p class="details-description"> 
+                        A mental health app designed to support the users with features such as podcasting, articles, 
+                        meditation timer and also mood tracker. 
+                        This app enables anonymous social communication, 
+                        fostering a supportive community for users to connect and express emotions.
+                        This implementation received a Top 5 award from Odyssey Hackactfest, hosted by the University of Malaya.                    
+                    </p>
+                    <a href="https://github.com/yapmingxuan/HealMe"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix app">
+                <img src="images/todoey.jpg" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Checklist App</h3>
+                    <h1 class="work-title">Todoey</h1>
+                    <small class="details-info">Flutter</small>
+                    <p class="details-description">
+                        A simple checklist app that is designed to help you easily list all your to-dos and 
+                        check them off as you complete them, allowing the user to stay organized and boost productivity!
+                    </p>
+                    <a href="https://github.com/yanqi325/Todoey"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix app">
+                <img src="images/flashchat.jpg" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Chat App</h3>
+                    <h1 class="work-title">Flashchat</h1>
+                    <small class="details-info">Flutter</small>
+                    <p class="details-description"> 
+                        FlashChat app, a streamlined platform for seamless real-time chatting. Built with Firebase integration, 
+                        this app offers a user-friendly interface for free-flowing communication. 
+                    </p>
+                    <a href="https://github.com/yanqi325/Flashchat"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix app">
+                <img src="images/xylophone.jpg" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Music App</h3>
+                    <h1 class="work-title">Xylophone</h1>
+                    <small class="details-info">Flutter</small>
+                    <p class="details-description"> 
+                        A simple music app, offering a variety of music keynotes for entertainment purposes.
+                    </p>
+                    <a href="https://github.com/yanqi325/Xylophone-1"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+
+            <!-- Website -->
+            <div class="work mix web">
+                <img src="images/movie.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Movie Website</h3>
+                    <h1 class="work-title">The Movies</h1>
+                    <small class="details-info">HTML CSS JavaScript</small>
+                    <p class="details-description">
+                        Explore upcoming movies in style with my static movie website. 
+                        Built with HTML, CSS, and JavaScript, this project showcases a sleek UI design, 
+                        offering a glimpse into the world of cinema.                     
+                    </p>
+                    <a href="https://github.com/yanqi325/MovieWebsite"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- design -->
+            <div class="work mix design">
+                <img src="images/lilyinterface.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mobile App Interface</h3>
+                    <h1 class="work-title">Lily Doll Project</h1>
+                    <small class="details-info">Figma</small>
+                    <p class="details-description">
+                        The user interface of this app is designed with empathy and innovation to blend the education and mental health support
+                        for the children with autism. This UI is a testment to thoughtful design, featuring a clean, intuitive interface that 
+                        fosters engagment and learning. This UI design have being approved by the client from autism community organization. 
+                    </p>
+                    <a href="https://www.figma.com/file/SAkh1GNJ8ZpFIx75MgnlLU/Portfolio-_-Lily-Doll-Project?type=design&mode=dev&t=X1wwKICEJCKKyhBq-1"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix design">
+                <img src="images/healme interface.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mobile App Interface</h3>
+                    <h1 class="work-title">Heal Me</h1>
+                    <small class="details-info">Figma</small>
+                    <p class="details-description"> 
+                        A mental health app interface with a creative theme of 'galaxy' where 
+                        the user can "throw" all their emotions to the galaxy anonymously to the community and 
+                        chat about it anonymously. On top of that, the interface also focuses on the use case of podcasting, article viewing, 
+                        meditation timer, and mood tracker. This interface received a Top 5 award from Odyssey Hackactfest, hosted by the University of Malaya.
+                    </p>
+                    <a href="https://www.figma.com/file/OlFvP0UduZ7YfU6Vo3xeTA/Portfolio-_-HealMe?type=design&mode=dev&t=qSjmLKZ7YWK4mt8N-1"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix design">
+                <img src="images/gateaway.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mobile App Interface</h3>
+                    <h1 class="work-title">Gateaway</h1>
+                    <small class="details-info">Canva</small>
+                    <p class="details-description">
+                        A creative interface design for the Getaway app aims to assist the student community in maintaining engagement 
+                        in studies and productivity, particularly during quarantine. This interactive design features a 
+                        study area, sports elements with a variety of games, and a rewarding concept.
+                    </p>
+                    <a href="https://www.canva.com/design/DAFjbA_Qlhs/JZ5sprztbiTAjoWiNyeJVg/edit?utm_content=DAFjbA_Qlhs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix design">
+                <img src="images/ezshop.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mobile App Interface</h3>
+                    <h1 class="work-title">EZShop</h1>
+                    <small class="details-info">Marvel App</small>
+                    <p class="details-description"> An online shopping app interface that is crafted to provide a seamless and intuitive browsing experience, 
+                        allowing users to effortlessly explore a wide range of products. Each element is carefully placed to 
+                        enhance usability and ensure easy navigation. 
+                        From browsing to checkout and analysis of expenditure, every step is designed with convenience in mind.
+                    </p>
+                    <a href="https://miro.com/app/board/uXjVNqzUzDs=/?share_link_id=920114660545"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix design">
+                <img src="images/igo.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Mobile App & <br> Smart Watch Interface</h3>
+                    <h1 class="work-title">iGO</h1>
+                    <small class="details-info">Marvel App</i></small>
+                    <p class="details-description"> 
+                        A user-centric app designed to tackle traffic congestion in Malaysia. 
+                        It includes an online booking system, real-time tracking of public transport, 
+                        priority features for the elderly and disabled, AR self-navigation, and a community forum. 
+                        The app also offers a smartwatch interface with voice command, IoT integration, 
+                        and peak-time transport allocation using big data.
+                    </p>
+                    <a href="https://miro.com/app/board/uXjVNqzGUT4=/?share_link_id=323298436535"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work mix design">
+                <img src="images/hilti.JPG" alt="" class="work-img">
+                <div class="layer">
+                    <h3 class="work-category">Website Design</h3>
+                    <h1 class="work-title">Hilti Website</h1>
+                    <small class="details-info">Proto.io</i></small>
+                    <p class="details-description">
+                        An enhancement of current Hilti website design with additional Industry 4.0 interface design ideas 
+                        such as AI virtual chat with robot assitant, Computer Vision Measurement, AR Product Recommendation 
+                        and VR Product Experiencin
+                    </p>
+                    <a href="https://miro.com/app/board/uXjVNqxoCYA=/?share_link_id=541419467574"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class='bx bxs-paper-plane'></i>  yanqi0325@gmail.com</p>
+                    <p><i class='bx bxs-phone' ></i>  011-12241328</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/lim-yan-qi-673b9a205"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/yanqi325"><i class='bx bxl-github'></i></a>
+                        <a href="mailto:yanqi0325@gmail.com"><i class='bx bx-envelope'></i></a>
+                    </div>
+                    <a href="images/Lim Yan Qi_Resume mobile.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="236e7776-6de1-40ea-bb11-8723999ee2a0">
+
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>&#169 LimYanQi All Right Reserved. </p>
+        </div></p>
+        </div>
+    </section>
+
+
+    <!-- Mixitup -->
+    <script src="mixitup.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
